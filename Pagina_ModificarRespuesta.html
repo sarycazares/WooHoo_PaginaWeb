@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WooHoo</title>
+    <link rel="shortcut icon" href="imagenes/woohoo_icon.png">
+    <link rel="stylesheet" href="css/estilos_Pagina_ModificarRespuesta.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/script_Loader.js"></script>
+    <script src="js/script_PopUp.js"></script>
+    
+</head>
+
+<body>
+    <div class="loader"></div>
+
+        
+    <body>
+        <form action="Pagina_PreguntaDesarrollada.html" method="GET" id="form">
+            <div class="form">
+                <h1>Modifica Tu Respuesta</h1>
+
+                <div class="grupo">
+                    <input class="IdEscondido" type="text" name="" id="IdEscondido">
+                    <input class="form-control" type="text" name="" id="usuario">
+                    </div>
+
+                    <div class="grupo">
+                    <label class="datos-form">Comentario</label>
+                    <textarea id="comment" class="form-control" required></textarea></label>
+                    </div>
+
+                    
+                    <div class="grupo">
+                      <input type="file" id="imagenPrevisualizacion" accept="image/*" />
+                      <label class="foto-form" for="imagenPrevisualizacion">Foto de descripción</label>  
+                          <img id="imagenPrevisualizacion01">
+                          <img id="imagenPrevisualizacion02" src="imagenes/gatitu_triste.jpg" height="0" width="0">
+                          <script src="js/script_ImagenPrevisualizacion.js"></script>
+                  </div>
+
+                <button type="submit" class="boton-preguntar" id="boton-preguntar">Modificar</button>
+                <button type="button" class="botonabrir" id="botonabrir">Eliminar</button>
+
+               
+        <div class="fondo_transparente">
+            <div class="modal">
+                <div class="modal_cerrar">
+                    <span>x</span>
+                </div>
+                <div class="modal_titulo">Eliminar Respuesta</div>
+            <div class="modal_mensaje">
+                <p>¿De verdad quieres eliminar respuesta? :c</p>
+            </div>
+                <div class="modal_botones">
+                    <a href="Pagina_PreguntaDesarrollada.html" class="boton">ACEPTAR</a>
+                </div>
+            </div>
+        </div> 
+               
+
+            </div>
+
+        </form>               
+
+        
+        
+    </body>    
+    
+    
+</body>
+

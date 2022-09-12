@@ -1,0 +1,253 @@
+*{
+margin:0;
+padding:0;
+box-sizing:boader-box;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../imagenes/loading_01.svg') 50% 50% no-repeat #5f2c82;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url('../imagenes/loading_01.svg') 50% 50% no-repeat;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #602c82a4,#49a09dbd), url('../imagenes/loading_01.svg') 50% 50% no-repeat;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+    opacity: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* //////////////////////////////////////////////////////    HEADER */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #5f2c82;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #602c82a4,#49a09dbd), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#EBEBEB;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover {
+    background-color: #7369bd; 
+    box-shadow: 0px 8px 15px #49408C;
+    border-radius: 3px;
+}
+
+nav > b{
+    color:#EBEBEB;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h3{
+    font-size: 25px;
+    font-weight: 300;
+    color:#fff;
+}
+
+
+/* //////////////////////////////////////////////////////    FOOTER */
+
+footer{
+    background: #141414;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor-footer > h4{
+    color:#EBEBEB;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.imagen-redes-sociales{
+    height: 100px;
+    text-align: center;
+}
+
+.contenedor-footer > h3{
+    color:#EBEBEB;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* //////////////////////////////////////////////////////   MAIN */
+
+.contenedor{
+    padding:60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* //////////////////////////////////////////////////////   CONTENEDOR MAIN */
+
+.titulo-nosotros{
+    color: #49408C;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* //////////////////////////////////////////////////////   SOBRE NOSOTROS */
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sobre-nosotros{
+    width: 48%;
+    
+}
+
+.contenido-nosotros{
+    width: 48%;
+    
+    
+}
+
+.contenido-nosotros h3{
+    margin-bottom: 15px;
+    padding: 0px 0px 30px 15px;
+}
+
+.contenido-nosotros p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenido-nosotros h4{
+    margin-bottom: 25px;
+    padding: 0px 0px 30px 15px;
+    color: #71706F;
+}
+
+
+/* //////////////////////////////////////////////////////   REGISTRATE */
+.contenedor-registrate{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#imagen-registrate01{
+    width: 50%;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 30px 15px;
+}
+
+#imagen-registrate02{
+    width: 50%;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 30px 15px;
+}
+
+#imagen-registrate03{
+    width: 54%;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 30px 15px;
+}
+
+
+.contenido-registrate h3{
+    margin-bottom: 15px;
+}
+
+.contenido-registrate h3 span{
+    background: #49408C;
+    color: #EBEBEB;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-registrate p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+ /* ////////////////////////    REDUCCION PAGINA */
+
+ @media only screen and (max-width: 700px){
+
+    .textos-header>img{
+        width: 350 px;
+        height: 100px;
+    }
+
+ }

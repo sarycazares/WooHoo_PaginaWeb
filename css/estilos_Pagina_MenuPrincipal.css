@@ -1,0 +1,868 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boader-box;
+    }
+    
+    .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('../imagenes/loading_01.svg') 50% 50% no-repeat #5f2c82;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url('../imagenes/loading_01.svg') 50% 50% no-repeat;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #602c82a4,#49a09dbd), url('../imagenes/loading_01.svg') 50% 50% no-repeat;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        opacity: 100%;
+    }
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }   
+    
+
+    /* //////////////////////////////////////////////////////    HEADER */
+
+    header {
+        width: 100%;
+        height: 65px;
+        background: #49408C;
+        position: fixed;
+        z-index: 99;
+    }
+    
+    .waveHeader{
+        position: absolute;
+        top: -38px;
+        z-index: -99;
+        width: 100%;
+    }
+    .nav-menu{
+        padding: 30px 50px 0 0;
+        text-align: center;
+               
+    }
+
+    .usuariobienvenida{
+        text-align: left;
+        position:absolute;
+        right: 10%;
+        width: 52px;
+        height: 50px;
+        top: 10px;      
+    }
+    
+    .bienvenida_usuario{
+        color:#EBEBEB;
+        font-size: 20px;
+        font-weight: 300;
+        margin-right: 10px;
+        top: 3%;
+        position:absolute;
+        left: 100%;
+    }
+
+    .nombre_usuario{
+        color:#EBEBEB;
+        position:absolute;
+        font-size: 20px;
+        font-weight: 300;
+        margin-right: 10px;
+        top: 45%;
+        position:absolute;
+        width: 10%;
+        height: 10%;
+        left: 100%;
+
+    }
+
+    .imagen-perfilusuario{
+        border-radius: 8px;
+        position: absolute;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        text-align: left;
+    }
+
+    .nav-menu > a{
+        color:#EBEBEB;
+        font-size: 25px;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .nav-menu > a:hover {
+        background-color: #7369bd; 
+        box-shadow: 0px 8px 15px #49408C;
+        border-radius: 3px;
+    }
+
+    
+    .nav-menu > abbr:hover {
+        background-color: #7369bd; 
+        box-shadow: 0px 8px 30px #49408C;
+        border-radius: 3px;
+    }
+    
+    .nav-menu > b{
+        color:#EBEBEB;
+        font-size: 25px;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    
+    .imagen-logo{
+        position: absolute;
+        width: 200px;
+        height: 45px;
+        top: 8px;
+        left: 2%;    
+            
+    }
+
+    #Busqueda{
+        width: 150px;
+    }
+
+    /* ////////////////////////    VENTANA MODAL */
+
+    .fondo_transparente{
+        top: 0;
+        left: 0;
+        background: #49408c2a;
+        backdrop-filter: blur(5px);
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        display: none;
+        z-index: 100;
+    }
+    .modal{
+        background: linear-gradient(0deg,#EBEBEB 70%, #49408C 30%);
+        width: 600px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 30px;
+
+    }
+    .modal_cerrar{
+        background: #EBEBEB;
+        position: absolute;
+        right: -20px;
+        color: #49408C ;
+        top: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .modal_titulo{
+        color: #EBEBEB;
+        font-size: 40px;
+    }
+    .modal_mensaje{            
+       padding: 10px 30px;
+    }
+    .modal_botones{      
+        width: 100%;    
+       background: #EBEBEB;
+       border-top:#EBEBEB 1px;
+       padding-top: 20px;
+       display: flex;
+       justify-content: space-evenly;
+    }        
+
+
+
+    /* //////////////////////////////////////////////////////    FOOTER */
+
+footer{
+    background: #141414;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor-footer > h4{
+    color:#EBEBEB;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.imagen-redes-sociales{
+    height: 100px;
+    text-align: center;
+}
+
+.contenedor-footer > h3{
+    color:#EBEBEB;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.TodasCategorias{
+    text-align: center;
+}
+
+
+.Tcategorias{
+    position: relative;
+    margin: 30px ;
+}
+
+.TodasCategorias>h3{
+    color: #EBEBEB;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.aCategoria{
+    color:#EBEBEB;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.aCategoria:hover {
+    background-color: #7369bd; 
+    box-shadow: 0px 8px 15px #49408C;
+    border-radius: 3px;
+}
+
+.bCategoria{
+    color:#EBEBEB;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+    /* //////////////////////////////////////////////////////   MAIN */
+
+    .contenedor-Bienvenida{
+        background: #5f2c82;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #602c82a4,#49a09dbd), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    /* ////////////////////////    BOTON PREGUNTAR */
+
+
+    .boton-RealizaPregunta {
+        font-size: 12px;
+        font-weight: lighter;
+        text-decoration: none;
+        color: #EBEBEB;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        background-color: #6F65B8;
+        border-radius: 8px;
+        padding: 18px 18px;
+        position: fixed;
+        top: 30%;
+        left: -1%;
+        transition: all 300ms ease 0ms;
+        box-shadow: 0px 8px 15px #49408C;
+        z-index: 98;
+    }
+    .boton-RealizaPregunta:hover {
+        background-color: #504a80; 
+        box-shadow: 0px 8px 15px #49408C;
+        transform: translateY(-7px);
+    }
+    
+    /* ////////////////////////    CARRUSEL */
+
+    #carrusel {
+        float:left;
+        width: 57%;
+        overflow:hidden;
+        height:240px;
+        position:relative;
+        margin-top:20px;
+        margin-bottom:20px;
+        background: none;
+        left: 15%;
+        background: #6f65b869;
+        box-shadow: 0px 8px 15px #49408C;
+    }
+
+     
+    #carrusel .left-arrow {
+        position:absolute;
+        left:10px;
+        z-index:1;
+        top:50%;
+        margin-top:-9px;
+        border-radius: 8px;
+    }
+     
+    #carrusel .right-arrow {
+        position:absolute;
+        right:10px;
+        z-index:1;
+        top:50%;
+        margin-top:-9px;
+        border-radius: 8px;
+    }
+
+    .right-arrow:hover {
+        border-radius: 8px;
+        background-color: #7369bd; 
+        box-shadow: 0px 8px 15px #49408C;
+    }
+
+    .left-arrow:hover {
+        border-radius: 8px;
+        background-color: #7369bd; 
+        box-shadow: 0px 8px 15px #49408C;
+
+    }
+     
+    .carrusel {
+        width:4000px;
+        left:0px;
+        position:absolute;
+        z-index:0;
+    }
+
+    .titulo-preguntaspopulares{
+        background: #6f65b869;
+        width: 57%;
+        left: 15%;
+        top: 20px;
+        border-radius: 8px;
+        position:relative;
+    }
+
+    .titulo-preguntaspopulares02{
+        background: #6f65b869;
+        width: 57%;
+        left: 15%;
+        top: 260px;
+        border-radius: 8px;
+        position:relative;
+    }
+    
+    .titulo-preguntaspopulares>h1{
+        color: #EBEBEB;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        position:relative;
+        left: 30%;
+        width: 40%;
+        background: #5f2c82;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #602c82a4,#49a09dbd), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+    }
+
+     
+    .product {
+        float: left;
+        color: #EBEBEB;
+        height: 230px;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 200px;
+        background: #5f2c82;
+
+    }
+     
+
+    .product>h5{
+        position: relative;
+        left:37%;
+        font-size: 18px;
+        font-weight: 300;
+
+    }
+
+    .pregunta-popular{
+        background: #ebebeb93;
+        height: 600px;
+        background: #5f2c82;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#49408c8f, #49408c8f), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #49408c8f,#49408c8f), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .pregunta-popular>p {
+        color: #EBEBEB;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center; 
+          
+    }
+
+    
+
+    .Perfil-UsuarioCarrusel{
+        color: #EBEBEB;
+        font-size: 18px;
+        font-weight: 300;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left: 75px;
+    }
+
+    .UsuarioCarruselImagen{
+        border-radius: 50px;
+        position:absolute;
+        width: 65 px;
+        height: 65px;
+    }
+
+    .VerMasCarrusel{
+        background: #5F2C82;        
+        border: none;
+        display: block;
+        width: 200px;
+        font-weight: 400;
+        margin: 10px auto;
+        color: #EBEBEB;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        top:195px;
+        text-align: center;
+    }
+    
+
+     /* ////////////////////////    CATEGORIAS */
+
+    
+
+    .categorias{
+        margin-left: 75%;
+        margin-right: 5%;
+        position: relative;
+        top: -20px;
+        width: 18%;
+    }
+    .form{
+        background: #6f65b885;
+        padding: 25px 25px;
+        box-shadow: 0 0 6px 0 #49408C;
+        border-radius: 8px;
+    }
+
+    .grupo-categoria{
+        position: relative;
+        margin: 30px ;
+    }
+
+    ul>h1{
+        color: #EBEBEB;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 500;
+        background: #5f2c82;
+        position: relative;
+        margin: 10px ;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #602c82a4,#49a09dbd), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .grupo-categoria li{
+        color: #EBEBEB;        
+        font-size: 20px;
+        font-weight: 100;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    .grupo-categoria a{
+        color: #EBEBEB;
+        display: flex;
+        font-size: 20px;
+        font-weight: 100;
+        text-decoration: none;
+        margin-right: 10px;
+        text-align: left;
+    }
+     
+     /* ////////////////////////    PREGUNTAS RECIENTES */
+    
+    
+     .contenedor{
+        padding:80px 0;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .titulo{
+        color: #49408C;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+     /* ////////////////////////    CONTENEDOR PREGUNTAS*/
+
+    .contenedor-PreguntasScroll{
+        background: #a9a1e0;
+        padding: 50px 50px;
+        box-shadow: 0 0 6px 0 #a9a1e0;
+        border-radius: 8px;
+    }
+
+    .grupo-pregunta{
+        padding: 50px 0px;
+        box-shadow: 0 0 10px 0 #a9a1e0;
+        border-radius: 8px;
+
+    }
+
+    .pregunta-fondo{
+        background: #6F65B8;
+        padding: 20px 10px;
+        box-shadow: 0 0 10px 0 #6F65B8;
+        border-radius: 8px;
+    }
+
+    .FechaHora-Respuesta{
+        color: #a9a1e0;
+        font-size: 12px;
+        text-align: right;
+    
+    }
+    
+    .Editado-Respuesta{
+        color: #a9a1e0;
+        font-size: 12px;
+        text-align: right;
+    
+    }
+    
+    .Perfil-UsuarioPreguntaScrollImagen{
+        border-radius: 8px;
+        position: absolute;
+        text-align: center;
+        width: 5%;
+        height: 10%;
+        display: block;
+        text-align: left;
+    }
+
+    .contenedor-PreguntasScroll{
+        margin: 50px;
+
+    }
+    .pregunta-fondo>h3{
+        color: #EBEBEB;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: left; 
+        position: relative;
+        margin-left: 12%;
+    }
+
+    .Perfil-UsuarioPreguntaScroll{
+        color: #EBEBEB;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: left; 
+        position: relative;
+        margin-left: 12%;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .vermas-pregunta{
+        border: none;
+        display: block;
+        width: 10%;
+        font-weight: 400;
+        margin: 10px auto;
+        color: #EBEBEB;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        text-align: center;
+        background: #49408C;
+        border-radius: 8px;
+        right: 20%;
+    
+    }
+
+    .text-pregunta{
+        background: #5f2c82;  
+        padding: 50px 50px;
+        box-shadow: 0 0 10px 0 #6F65B8;
+        border-radius: 8px;   
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #602c82a4,#49a09dbd), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .text-pregunta>p{
+        color: #EBEBEB;
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center; 
+        position: relative;
+    }
+
+    /* //////////////////////////// PAGINADOR */
+
+    #paginacion{
+        text-align: center;
+        background: #5F2C82;
+        border-radius: 8px;  
+    }
+
+    #paginacion>a{
+        color:#EBEBEB;    
+        font-size: 25px;    
+        font-weight: 300;    
+        text-decoration: none;    
+        margin-right: 10px;
+    }
+
+    #paginacion>a:hover {
+        background-color: #7369bd; 
+        box-shadow: 0px 8px 15px #49408C;
+        border-radius: 3px;
+    }
+
+    #paginacion>img:hover {
+        background-color: #7369bd; 
+        box-shadow: 0px 8px 15px #49408C;
+        border-radius: 3px;
+    }
+
+    /* ////////////////////////    REDUCCION PAGINA */
+
+    @media only screen and (max-width: 1000px){
+
+        /* ////////////////////////   HEADER */
+
+        /*
+        .imagen-logo{
+            position: absolute;
+            width: 70px;
+            height: 20px;
+            top: 5px;
+            left: 2%;    
+                
+        }
+
+        
+
+        .imagen-perfilusuario{
+            position: absolute;
+            width: 30px;
+            height: 30px;  
+                
+        }
+        */
+
+
+        .bienvenida_usuario{
+            width: 0.1px;       
+            height: 0.1px;        
+            opacity: 0;       
+            overflow: hidden;       
+            position: absolute;       
+            z-index: -1;
+        }
+    
+        .nombre_usuario{
+            width: 0.1px;       
+            height: 0.1px;        
+            opacity: 0;       
+            overflow: hidden;       
+            position: absolute;       
+            z-index: -1;
+    
+        }
+    
+        .nav-menu > a{
+            width: 0.1px;       
+            height: 0.1px;      
+            opacity: 0;       
+            overflow: hidden;       
+            position: absolute;       
+            z-index: -1;
+        }
+        
+        .nav-menu > b{
+            width: 0.1px;       
+            height: 0.1px;         
+            opacity: 0;        
+            overflow: hidden;        
+            position: absolute;
+            z-index: -1;
+        }
+        
+        .nav-menu > abbr{
+            width: 0.1px;       
+            height: 0.1px;         
+            opacity: 0;        
+            overflow: hidden;        
+            position: absolute;
+            z-index: -1;
+        }
+
+        #Busqueda{
+            width: 0.1px;       
+            height: 0.1px;         
+            opacity: 0;        
+            overflow: hidden;        
+            position: absolute;
+            z-index: -1;
+        }
+
+
+        /* ////////////////////////    CATEGORIA*/
+
+        .form{
+            background: #6f65b885;
+            padding: 25px 25px;
+            box-shadow: 0 0 6px 0 #49408C;
+            border-radius: 8px;
+            position: relative;
+            height: 220px;
+        }
+
+        ul>h1{
+            color: #EBEBEB;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;            
+            position: relative;
+            left: -20px;
+            background: #5f2c82;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #602c82a4,#49a09dbd), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .grupo-categoria{
+            position: relative;
+            left:-20px;
+        }
+    
+        .grupo-categoria li{
+            color: #EBEBEB;
+            font-size: 10px;
+            font-weight: 100;
+            margin-right: 10px;
+            text-align: left;
+            width: 5%;
+        }
+    
+        .grupo-categoria a{
+            color: #EBEBEB;
+            font-size: 0px;
+            font-weight: 100;
+            text-decoration: none;
+            margin-right: 10px;
+            text-align: left;
+            width: 5%;
+        }
+
+        /* ////////////////////////    BOTON PREGUNTA*/
+
+        .boton-RealizaPregunta {
+           padding: 12px 20px;
+           bottom: 10%;
+           width: 5%;
+           height: 10%;
+           right: 20px;
+           font-size: 0%;
+       }
+
+       /* ////////////////////////    CONTENEDOR PREGUNTAS*/
+
+
+       .vermas-pregunta{
+        border: none;
+        display: block;
+        width: 5em;
+        font-weight: 400;
+        margin: 10px auto;
+        color: #EBEBEB;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        text-align: center;
+        background: #49408C;
+        border-radius: 8px;
+        right: 30%;
+       }
+
+       .Perfil-UsuarioPreguntaScrollImagen{
+        width: 0.1px;       
+            height: 0.1px;       
+            opacity: 0;        
+            overflow: hidden;        
+            position: absolute;
+            z-index: -1;
+    }
+    
+   } 
+
+   

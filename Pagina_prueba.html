@@ -1,0 +1,106 @@
+
+
+
+<!DOCTYPE html>
+
+
+
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>WooHoo</title>
+<link rel="shortcut icon" href="imagenes/woohoo_icon.png">
+<link rel="stylesheet" href="css/estilos_Pagina_Prueba.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/script_Loader.js"></script>
+<script src="js/script_ValidacionRegistro.js"></script>>
+<script src="js/script_PopUp.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+<div class="loader"></div>
+
+
+
+<body>
+<form action="Pagina_Perfil.html" method="GET" id="form">
+<div class="form">
+<h1>Modificar perfil</h1>
+<div class="grupo">
+<input type="text" name="nombre" id="nombre" required>
+<input type ="text" name ="nombre" value="<%= usa.getNombre() %>" readonly>
+<label class="datos-form" for="">Nombre</label>
+</div>
+<div class="grupo">
+<input type="text" name="apellido" id="apellido" required>
+<br><input type ="text" name ="apellido" value="<%= usa.getApellido() %>" readonly>
+<label class="datos-form" for="">Apellido</label>
+</div>
+<div class="grupo">
+<h4>Fecha de nacimiento</h4>
+<input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required>
+<input type ="text" name ="fecha-nacimiento" value="<%= usa.getFecha_nat() %>" readonly><p>
+<input type="file" name = "imagenPrevisualizacion" id="imagenPrevisualizacion" accept="image/*" />
+<input type ="text" name ="imagenPrevisualizacion" value="<%= usa.getFoto_usuario() %>" readonly>
+<label class="foto-form" for="imagenPrevisualizacion">Foto de perfil</label>
+<img id="imagenPrevisualizacion01">
+<script src="js/script_ImagenPrevisualizacion.js"></script>
+</div>
+<div class="grupo">
+<input type="email" name="correo" id="correo" required>
+<input type ="text" name ="correo" value="<%= usa.getEmail() %>" readonly>
+<label class="datos-form" for="">Correo Electronico</label>
+</div>
+
+<div class="grupo">
+<input type="text" name="contraseña" id="contraseña" pattern="[A-Z]{3}[a-z]{3}[0-9]{1}[!#$%&/()=?*]{1}" title= "La contraseña tiene que seguir el ORDEN de 3 LETRAS MAYUSCULAS, 3 LETRAS MINUSCULAS, 1 NÚMERO y 1 CARACTER ESPECIAL de estos !#$%&/()=?*" onclick="ContraseñaOnclick()" required>
+<input type ="text" name ="contraseña" value="<%= usa.getContraseña() %>" readonly>
+<label class="datos-form" for="">Contraseña</label>
+</div>
+
+<form action = "ModificarUControl" method = "Post">
+<input type ="submit" class ="botonModif" value ="Modificar Perfil">
+</form>
+
+
+<form action = "EliminarUControl" method = "Post">
+<button type="button" class="botonEliminar" id="botonEliminar">Eliminar</button>
+</form>
+
+
+<div class="fondo_transparente">
+<div class="modal">
+<div class="modal_cerrar">
+<span>x</span>
+</div>
+<div class="modal_titulo">Eliminar Pregunta</div>
+<div class="modal_mensaje">
+<p>¿De verdad quieres eliminar tu usuario? :c</p>
+</div>
+<div class="modal_botones">
+<a href="Pagina_MenuPrincipal.html" class="boton">ACEPTAR</a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+</form>
+</body>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WooHoo</title>
+    <link rel="shortcut icon" href="imagenes/woohoo_icon.png">
+    <link rel="stylesheet" href="css/estilos_Pagina_Perfil.css">
+    <script src="https://use.fontawesome.com/b181f78a29.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script_PopUp.js"></script>
+    <script src="js/script_Loader.js"></script>
+    <script src="js/script_FooterCategorias.js"></script>
+    
+</head>
+
+
+<body onload="PonerCategorias();">
+    <div class="loader"></div>
+    
+    <header>
+
+        <form method="get" action="Pagina_ResultadoBuscar.html">
+            <nav class="nav-menu">
+                <div class="usuariobienvenida">
+                    <a href="Pagina_Perfil.html" class="">
+                    <img class="imagen-perfilusuario" src="imagenes/fotos_perfil/gatico_01.jpg" width="60" height="60">
+                    <h1 class="bienvenida_usuario"> Bienvenido</h1>
+                    <h1 class="nombre_usuario" id="nombre_usuario"> AryMistery</h1> 
+                </a></div>     
+                <a href="Pagina_Buscar.html">Buscar</a>
+                <input type="search" name="busqueda" id="Busqueda" placeholder="Busca en la web">                  
+                <b href="#"> | </b>
+                <abbr title="Categoría Ciencia"><a href="Pagina_ResultadoBuscar.html" class="categoria" id="categoria"><img src="imagenes/iconos/ciencia.png"/></a></abbr>
+                <abbr title="Categoría Tecnología"><a href="Pagina_ResultadoBuscar.html" class="categoria" id="categoria"><img src="imagenes/iconos/tecnologia.png"/></a></abbr>
+                <abbr title="Categoría Pasatiempos"><a href="Pagina_ResultadoBuscar.html" class="categoria" id="categoria"><img src="imagenes/iconos/pasatiempos.png"/></a></abbr>
+                <abbr title="Categoría Humanidades"><a href="Pagina_ResultadoBuscar.html" class="categoria" id="categoria"><img src="imagenes/iconos/humanidades.png"/></a></abbr>
+                <abbr title="Categoría Random"><a href="Pagina_ResultadoBuscar.html" class="categoria" id="categoria"><img src="imagenes/iconos/random.png"/></a></abbr>
+                <b href="#"> | </b>
+                <a href="#" class="botonabrir" id="botonabrir">Cerrar Sesión</a>
+               
+                <div class="fondo_transparente">
+                    <div class="modal">
+                        <div class="modal_cerrar">
+                            <span>x</span>
+                        </div>
+                        <div class="modal_titulo">CERRAR SESIÓN</div>
+                    <div class="modal_mensaje">
+                        <p>¿De verdad quieres cerrar sesión? :c</p>
+                    </div>
+                        <div class="modal_botones">
+                            <a href="Pagina_INDEX.html" class="boton">ACEPTAR</a>
+                        </div>
+                    </div>
+                </div> 
+           
+            </nav>
+        </form>
+
+        <nav class="imagen-WooHoo">            
+            <a href="Pagina_MenuPrincipal.html" class="imagen-logo" id="imagen-logo"><img class="imagen-logo" src="imagenes/woohoo_icon_principal_03.png"></a>
+        </nav>    
+        
+        <div style="height: 150px; overflow: hidden;" >
+           <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M-20.87,-8.38 C148.42,76.47 271.49,-49.98 499.43,41.94 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #49408C;">
+            </path>
+        </svg>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <section class="contenedor-Bienvenida"> 
+            
+            
+            <a href="Pagina_Preguntar.html" class="boton-RealizaPregunta" id="boton-RealizaPregunta">PREGUNTA<img src="imagenes/etiqueta_boton.png" width="30" height="30"/></a>
+            
+            <div class="contenedor">
+            <div class="contenedor-PreguntasScrollPerfil">
+                <div class ="grupo-preguntaPerfil">                    
+                    <div class="pregunta-fondoPerfil">  
+                        <img id="imagen-descripcionPerfil" src="imagenes/fotos_perfil/gatico_01.jpg">
+                        <img id="imagen-descripcionfotoPerfil" src="imagenes/Fondo_foto.png"> 
+                        <h3>Mi Perfil</h3>                                 
+                        <h4 id="UsuarioPerfil">AryMistery</h4> 
+                        <h3 id="NombrePerfil"> Leslie Sarahy Cazares Mendoza</h3> 
+                        <h3 id="CorreoPerfil">sarycazares@live.com.mx</h3>
+                        <h3 id="FechaNacimientoPerfil">14/07/1998</h3>
+                        <h3 id="EdadPerfil">22 años</h3>                        
+                        <a href="Pagina_ModificarPerfil.html">Modificar Perfil</a>                      
+                        <br>                   
+                    </div>                                        
+        
+                </div>
+            </div>
+            </div>
+
+            <div class="wave" style="height: 150px; overflow: hidden;" >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">                    
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+            <section class="contenedor -Preguntas">
+
+                
+                    
+                <div class="contenedor-PreguntasScroll">
+
+                    <a class="titulo -Preguntas" href="Pagina_ResultadoBuscar.html">PREGUNTAS HECHAS</a>
+                    <a class="titulo -Preguntas" href="Pagina_ResultadoBuscar.html">RESPUESTAS HECHAS</a>                
+                    <a class="titulo -Preguntas" href="Pagina_ResultadoBuscar.html">PREGUNTAS UTILES</a>                
+                    <a class="titulo -Preguntas" href="Pagina_ResultadoBuscar.html">PREGUNTAS FAVORITAS</a>
+
+                    <!-- <div class ="grupo-pregunta">                    
+                        <div class="pregunta-fondo">
+                            <h5 class="FechaHora-Respuesta" id="FechaHoraP1"></h5>    
+                            <h5 class="Editado-Respuesta" id="EditadoP1"> No Editado</h5>
+                            <a href="Pagina_Perfil.html" >   
+                            <img class="Perfil-UsuarioPreguntaScrollImagen" src="imagenes/fotos_perfil/gatico_01.jpg"> 
+                            </a>                       
+                            <a href="Pagina_Perfil.html" class="Perfil-UsuarioPreguntaScroll">AryMistery</a>                        
+                            <h3>Pregunta:</h3>                        
+                            <br>                   
+                        </div>                    
+                        <div class="text-pregunta">
+                            <br><br>                        
+                            <p>¿Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                            <br><br>                         
+                        </div>                        
+                        <div class="pregunta-fondo">                            
+                            <a class="vermas-pregunta" href="Pagina_PreguntaDesarrollada.html">Ver mas</a> 
+                            <br>
+                            <br>
+                        </div> 
+                    </div> -->
+                    
+                    
+
+                    
+                </div>   
+</section>
+    
+
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #141414;">                    
+                </path>
+            </svg>
+        </div>
+
+
+    </main>
+
+    
+    <footer>
+
+        <div class ="TodasCategorias" id="TodasCategorias">
+            <h3>CATEGORÍAS</h3>
+
+            <div class="Tcategorias" id="Tcategorias">
+
+            </div>
+
+        </div>
+      
+        <div class="contenedor-footer">           
+                <h4> SIGUENOS EN </h4>                
+                <img src="imagenes/redessociales_icon.png" alt="" class="imagen-redes-sociales"> 
+                <h3 class="titulo-final">&copy; Bryan y Sary | Año 2021 </h3> 
+        </div>
+
+        
+    </footer>
+
+
+
+</body>
+
+</html>

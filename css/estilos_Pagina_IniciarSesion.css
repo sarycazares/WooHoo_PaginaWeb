@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boader-box;
+    }
+
+    .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('../imagenes/loading_01.svg') 50% 50% no-repeat #5f2c82;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url('../imagenes/loading_01.svg') 50% 50% no-repeat;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #602c82a4,#49a09dbd), url('../imagenes/loading_01.svg') 50% 50% no-repeat;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        opacity: 100%;
+    }
+    
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+
+
+        background: #5f2c82;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#602c82c5, #49a09da8), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #602c82a4,#49a09dbd), url(../imagenes/Espacio-Estrellas-Galaxias-Nebulosas-HD-Pics.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton-iniciarsesion{
+        background: #49408C;        
+        border: none;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: #EBEBEB;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .boton-omitiriniciarsesion{
+        background: #71706F;        
+        border: none;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: #EBEBEB;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h1{
+        text-align: center;
+        font-weight: 700;
+        color: #49408C;
+    }
+
+    form{
+        background: #EBEBEB;
+        padding: 50px 50px;
+        box-shadow: 0 0 6px 0 #EBEBEB;
+        border-radius: 8px;
+    }
+
+    .grupo{
+        position: relative;
+        margin: 15px ;
+    }
+
+    input{
+        background: none;
+        color: #71706F;
+        font-size: 16px;
+        padding: 15px 5px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px #71706F;
+    }
+
+    input:focus{ 
+        outline: none;
+        color: #5e5d5d;
+    }
+
+ 
+
+  .datos-form{
+        color: #71706F;
+        font-size: 18px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    }
+
+    input:focus~label,
+    input:valid~label{
+        top: -14px;
+        font-size: 12px;
+        color: #71706F;
+    }
+
+    img{
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+   
+
+      h3{
+        color: #71706F;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        text-align: center;
+    }
+
+    a{
+        color: #71706F;
+        font-size: 12px;
+        font-weight: 400;
+        position: absolute;
+        text-decoration: none;
+        margin-right: 40px;
+        text-align: center;
+        padding: 0px 0px 0px 20px
+    }
